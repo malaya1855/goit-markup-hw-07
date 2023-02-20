@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section -->
+    <header class="section-header">
+        <div class="container flex-header">
+            <a class="logo" href="./">Web<span class="logo-dark">Studio</span></a>
+            <nav>
+                    <ul class="flex-menu">
+                        <li class="menu"><a class="nav current" href="./index.html">Studio</a> </li>
+                        <li class="menu"><a class="nav" href="./portfolio.html">Portfolio</a> </li>
+                        <li class="menu"><a class="nav" href>Contacts</a> </li>
+                    </ul>
+            </nav>
+            <address class="contacts">
+                <ul class="flex-contacts">
+                    <li class="menu contact-mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="contact-phone"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+        </div>
+    </header>
+    <!-- Page section -->
+    <main>
+        <!-- Hero -->
+        <section class="section-hero">
+            <div class="hero-bcg">
+                <h1 class="hero-name">Effective Solutions for Your Business</h1>
+                <button class="btn-order" data-modal-open type="button">Order Service</button>
+            </div>
+        </section>
+        <!-- Advanteges -->
+        <section class="section">
+            <div class="container">
+                <h2 class="title" visually hidden> Advanteges</h2>
+                <ul class="flex-advantage">
+                    <li class="list-adv">
+                        <div class="advant-icon">
+                            <svg width="64" height="64">
+                              <use href="./images/icomoon/sprite.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        <h3 class="subtitle">Strategy</h3>
+                        <p class="body-text">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
+                    </li>
+                    <li class="list-adv">
+                        <div class="advant-icon">
+                            <svg width="64" height="64">
+                                <use href="./images/icomoon/sprite.svg#icon-clock"></use>
+                              </svg>
+                        </div>
+                        <h3 class="subtitle">Punctuality</h3>
+                        <p class="body-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                    </li>
+                    <li class="list-adv">
+                        <div class="advant-icon">
+                            <svg width="64" height="64">
+                                <use href="./images/icomoon/sprite.svg#icon-diagram"></use>
+                              </svg>
+                        </div>
+                        <h3 class="subtitle">Diligence</h3>
+                        <p class="body-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                    </li>
+                    <li class="list-adv">
+                        <div class="advant-icon">
+                            <svg width="64" height="64">
+                                <use href="./images/icomoon/sprite.svg#icon-astronaut"></use>
+                              </svg>
+                        </div>
+                        <h3 class="subtitle">Technologies</h3>
+                        <p class="body-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Samples of our work -->
+        <section class="section section-top">  
+            <div class="container">
+                <h2 class="title">What are we doing</h2>
+                <ul class="flex-works">
+                    <li><img src="./images/websamples/rectangle71.jpg" alt="Monitor's screen" width="360" height="300"></li>
+                    <li><img src="./images/websamples/rectangle72.jpg" alt="Layers of mobile app screen" width="360" height="300"></li>
+                    <li><img src="./images/websamples/rectangle73.jpg" alt="Comparing of monitor's and mobile screens" width="360" height="300"></li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team -->
+        <section class="section team-board">
+            <div class="container">
+                <h2 class="title title-adds">Our Team</h2>
+                <ul class="flex-team">
+                    <li class="list-style">
+                        <img class="cards-image" src="./images/teamphoto/markguerrero.jpg" alt="Photo of the product designer" width="264" height="260">
+                            <div class="style-team">
+                                <h3 class="subtitle style-card">Mark Guerrero</h3>
+                            <p class="body-text">Product Designer</p>
+                                <ul class="team-network">
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="Instagram" rel="noopener noreferer">
+                                            <svg width="16" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="Twitter" rel="noopener noreferer">
+                                            <svg width="16" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="Facebook" rel="noopener noreferer">
+                                            <svg width="8" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="LinkedIn" rel="noopener noreferer">
+                                            <svg width="16" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                       </div>
+                        
+                    </li>
+                    <li class="list-style">
+                        <img class="cards-image" src="./images/teamphoto/tomford.jpg" alt="Photo of the frontend manager" width="264" height="260">
+                        
+                            <div class="style-team">
+                                <h3 class="subtitle style-card">Tom Ford</h3>
+                                <p class="body-text">Frontend Developer</p>
+                                <ul class="team-network">
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="Instagram" rel="noopener noreferer">
+                                            <svg width="16" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="Twitter" rel="noopener noreferer">
+                                            <svg width="16" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="Facebook" rel="noopener noreferer">
+                                            <svg width="8" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="LinkedIn" rel="noopener noreferer">
+                                            <svg width="16" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                       
+                        
+                    </li>
+                    <li class="list-style">
+                        <img class="cards-image" src="./images/teamphoto/camilagarcia.jpg" alt="Photo of the marketinf manager" width="264" height="260">
+                            <div class="style-team">
+                                <h3 class="subtitle style-card">Camila Garcia</h3>
+                                <p class="body-text">Marketing</p>
+                                <ul class="team-network">
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="Instagram" rel="noopener noreferer">
+                                            <svg width="16" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="Twitter" rel="noopener noreferer">
+                                            <svg width="16" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="Facebook" rel="noopener noreferer">
+                                            <svg width="8" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="LinkedIn" rel="noopener noreferer">
+                                            <svg width="16" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                       
+                        
+                    </li>
+                    <li class="list-style">
+                        <img class="cards-image" src="./images/teamphoto/danielwilson.jpg" alt="Photo of the UI designer" width="264" height="260">
+                       
+                            <div class="style-team">
+                                <h3 class="subtitle  style-card">Daniel Wilson</h3>
+                                <p class="body-text">UI Designer</p>
+                                <ul class="team-network">
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="Instagram" rel="noopener noreferer">
+                                            <svg width="16" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="Twitter" rel="noopener noreferer">
+                                            <svg width="16" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="Facebook" rel="noopener noreferer">
+                                            <svg width="8" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team-link">
+                                        <a class="icon-link" href aria-label="LinkedIn" rel="noopener noreferer">
+                                            <svg width="16" height="16">
+                                              <use href="./images/icomoon/sprite.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                
+                        
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <!-- Customers -->
+        <section class="section section-cust">
+            <div class="container">
+                <h2 class="title">Customers</h2>
+                <ul class="flex-customers">
+                    <li><a class="customer-link" href aria-label rel="noopenere noreferer">
+                        <svg class="customer-icon" width="41" height="47">
+                          <use href="./images/icomoon/sprite.svg#icon-cust-one"></use>
+                        </svg>
+                    </a></li>
+                    <li><a class="customer-link" href aria-label rel="noopenere noreferer">
+                        <svg class="customer-icon" width="40" height="52">
+                          <use href="./images/icomoon/sprite.svg#icon-cust-two"></use>
+                        </svg>
+                    </a></li>
+                    <li><a class="customer-link" href aria-label rel="noopenere noreferer">
+                        <svg class="customer-icon" width="44" height="41">
+                          <use href="./images/icomoon/sprite.svg#icon-cust-three"></use>
+                        </svg>
+                    </a></li>
+                    <li><a class="customer-link" href aria-label rel="noopenere noreferer">
+                        <svg class="customer-icon" width="84" height="41">
+                          <use href="./images/icomoon/sprite.svg#icon-cuts-four"></use>
+                        </svg>
+                    </a></li>
+                    <li><a class="customer-link" href aria-label rel="noopenere noreferer">
+                        <svg class="customer-icon" width="63" height="45">
+                          <use href="./images/icomoon/sprite.svg#icon-cust-five"></use>
+                        </svg>
+                    </a></li>
+                    <li><a class="customer-link" href>
+                        <svg class="customer-icon" width="94" height="44">
+                          <use href="./images/icomoon/sprite.svg#icon-cust-six"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="section-footer">
+        <div class="container footer-flex">
+            <div class="footer-base">
+                <a class="logo" href="./">Web<span class="logo-light">Studio</span></a>
+                <p class="footer-text">Increase the flow of customers and <br> sales for your business with digital <br> marketing & growth solutions.</p>
+            </div>
+        <div class="footer-social-network">
+            <p class="footer-subtitle">Social media</p>
+            <ul class="footer-network">
+                <li class="footer-link">
+                    <a class="footer-icon" href aria-label="Instagram" rel="noopenere noreferer">
+                        <svg width="24" height="24">
+                          <use href="./images/icomoon/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-link">
+                    <a class="footer-icon" href aria-label="Twitter" rel="noopenere noreferer">
+                        <svg width="24" height="24">
+                          <use href="./images/icomoon/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-link">
+                    <a class="footer-icon" href aria-label="Facebook" rel="noopenere noreferer">
+                        <svg width="12" height="24">
+                          <use href="./images/icomoon/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-link">
+                    <a class="footer-icon" href aria-label="LinkedIn" rel="noopenere noreferer">
+                        <svg width="24" height="24">
+                          <use href="./images/icomoon/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-subscribe">
+            <p class="footer-subtitle">Subscribe</p>
+            <form class="subscribe-form" action>
+                    <input class="subscribe-input" name="email" type="email" placeholder="E-mail">
+                <button class="subscribe-btn" type="submit">
+                    <span class="footer-subtitle subtitle-btn">Subscribe</span>
+                    <svg class="subscribe-icon" width="24" height="24">
+                      <use href="./images/icomoon/sprite.svg#icon-subscribe"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    </footer>
+<!-- Modal window -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="btn-modal" data-modal-close type="button">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icomoon/sprite.svg#icon-close"></use>
+        </svg>
+    </button>
+    <div class="modal-form-field">
+        <b class="modal-name">Leave your contacts and we will call you back</b>
+        <form class="modal-form" action></form>
+        <ul class="modal-form-list">
+            <li class="input-list">
+                <label for="name" class="modal-label">Name </label>
+                <div class="modal-input-field">
+                    <input class="modal-input" name="name" type="text" id="name">
+                    <svg class="modal-form-icon" width="18" height="18">
+                      <use href="./images/icomoon/sprite.svg#icon-person"></use>
+                    </svg>
+                </div>
+            
+            </li>
+            <li class="input-list">
+                <label for="phone" class="modal-label">Phone </label>
+                <div class="modal-input-field">
+                    <input class="modal-input" name="phone" type="text" id="phone">
+                    <svg class="modal-form-icon" width="18" height="24">
+                      <use href="./images/icomoon/sprite.svg#icon-phone"></use>
+                    </svg>
+                </div>
+            </li>
+            <li class="input-list">
+                <label for="email" class="modal-label">Email </label>
+                <div class="modal-input-field">
+                    <input class="modal-input" name="email" type="text" id="email">
+                    <svg class="modal-form-icon" width="18" height="24">
+                      <use href="./images/icomoon/sprite.svg#icon-email"></use>
+                    </svg>
+                </div>
+            </li>
+        </ul>
+        <label class="modal-label">Comment
+        <textarea class="modal-comment" name="modal-comment" placeholder="Text input"></textarea>
+    </label>
+        <div class="checkbox-field">
+            <input class="modal-checkbox" name="privacy-policy" type="checkbox" id="check-privacy">
+            <label  for="check-privacy" class="check-privacy">I accept the terms and conditions of the
+                <a class="check-privacy-link" href rel="noopener norefferer">Privacy Policy</a>  </label>      
+           <svg class="check-icon" width="16" height="16">
+             <use href="./images/icomoon/sprite.svg#icon-check"></use>
+           </svg>
+            </div>
+        <button class="btn-order modal-form-btn" type="submit">Send</button>
+    </div>
+    </div>
+</div>
+
+    <script src="./js/modal.js"></script>
+</body>
+</html>
