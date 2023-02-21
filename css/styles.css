@@ -20,6 +20,10 @@
     --green-success-color-50: rgb(49, 208, 170, 0.5);
     --green-success-color-10: rgba(49, 208, 170, 0.1);
     --hover-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* Breakpoints */
+    --mobile: 480px;
+    --tablet: 768px;
+    --desktop: 1200px;
 }
 
 body {
@@ -77,11 +81,26 @@ img {
 }
 /* reset end */
 
+/**
+  |============================
+  | Containers
+  |============================
+*/
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    min-width: 320px;
+    max-width: 428px;
+    padding: 0 16px;
     margin: 0 auto;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
+}
+@media screen and (min-width: 768px){
+    .container {
+        max-width: 768px;}
+}
+@media screen and (min-width: 1200px){
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;}
 }
 /**
   |============================
@@ -89,9 +108,16 @@ img {
   |============================
 */
 .section{
+    padding-top: 96px; 
+    padding-bottom: 96px;
+}
+@media screen and (min-width: 1200px) {
+   .section{
     padding-top: 120px; 
     padding-bottom: 120px;
+} 
 }
+    
 .section-hero {
           
     max-width: 1440px;
@@ -112,9 +138,7 @@ background-position: center;
 .section-portfolio{
 padding-top: 96px;
 }
-.section-cust{
-padding-top: 130px;
-}
+
 .section-footer
     {padding-top: 100px;
         padding-bottom: 100px;
@@ -264,34 +288,67 @@ margin-right: 0px
   | Section advanteges
   |============================
 */
+
 .flex-advantage {
-                display: flex;
-            }
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+@media screen and (min-width: 768px) {
+.flex-advantage{
+flex-direction: row;
+flex-wrap: wrap;
+column-gap: 24px;
+}
+}
+
+.list-adv {
+    width: 100%;
+    }
+@media screen and (min-width: 768px) {
 .list-adv{
-                margin-right: 24px;
+    width: 356px; 
             }
-.list-style:last-child{
-                margin-right: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+    .list-adv{
+    width: 264px;   
             }
-.advant-icon{
+}
+
+@media screen and (max-width:1199px) {
+    .advant-icon {display:none}
+}
+@media screen and (min-width:1200px) {
+    .advant-icon{
     display: flex;            
     width: 264px;
-                height: 112px;
-                border-radius: 4px;
-                background-color: var(--background-light);
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 8px;
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--background-light);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
             }
+}           
  /**
 |============================
 | Section works
 |============================
 */
+@media  screen and (max-width: 1199px){
+    .section-works {
+    display: none;
+}}
+
+@media screen and (min-width: 1200px){
 .flex-works {
                 display:flex;
-                gap: 24px;
+                gap: 24px;;
             }
+}
+
 /**
 |============================
 | Section Team
@@ -304,11 +361,19 @@ margin-right: 0px
     text-align: center;
     margin-bottom: 72px;
 }
+
 .subtitle{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
+letter-spacing: 0.02em;
+}
+@media screen and (min-width: 1200px) {
+    .subtitle{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
+    }
 }
 .body-text{
     font-size: 16px;
@@ -335,6 +400,9 @@ gap: 24px;}
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
     }
+    /* .list-style:last-child{
+                margin-right: 0px;
+            } */
 .style-card{
         margin-bottom: 8px;;
     }
@@ -375,20 +443,38 @@ background-color: var(--primary-brand-color);
 */
 .flex-customers {
                 display: flex;
-                gap:24px
+                column-gap:16px;
+                row-gap: 72px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
+@media screen and (min-width: 768px) {
+    .flex-customers {
+                column-gap:24px;
+            }
+}
+@media screen and (min-width: 1200px) {
+    .customer-list{
+        row-gap: 0;
+            }
+            }
+
 .customer-link{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 168px;
+                width: 190px;
                 height: 88px;
                 border: 1px solid var(--addordinary-text-color);
                 color: var(--addordinary-text-color);
                 border-radius: 4px;
                 transition: color var(--hover-animation), border var(--hover-animation);
             }
-            
+  @media screen and (min-width: 1200px) {
+                .customer-link{
+                width: 168px;
+            }
+            }          
 .customer-icon {
                 fill: currentColor;
             }
