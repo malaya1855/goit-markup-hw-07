@@ -838,6 +838,7 @@ color: rgba(255, 255, 255, 0.6);
                     font-size: 16px;
                     line-height: 1.5;
                     letter-spacing: 0.04em;
+                    white-space: nowrap;
                     padding: 8px 16px;
                     border-radius: 4px;
                     border: 1px solid var(--accent-subtitle);
@@ -849,7 +850,6 @@ color: rgba(255, 255, 255, 0.6);
                 @media screen and  (min-width: 768px) {
                     .btn-filter {
                         padding: 12px 24px;
-
                     }
                 }
                          
@@ -862,13 +862,16 @@ color: rgba(255, 255, 255, 0.6);
                             }
                             .flex-filter-btn {
                                 display: flex;
-                                gap: 24px;
-                                justify-content: center;
+                                column-gap: 24px;
+                                row-gap: 16px;
+                                flex-wrap: wrap;
+                                justify-content: start;
                                 margin-bottom: 48px;
                             }
                             @media screen and  (min-width: 768px) {
                                 .flex-filter-btn {
                                     margin-bottom: 64px;
+                                    justify-content: center;
             
                             }
                         }
@@ -880,10 +883,22 @@ color: rgba(255, 255, 255, 0.6);
                                 }
                             .flex-filter-cards {
                                 display: flex;
+                                flex-direction: column;
                                 flex-wrap: wrap;
+                                row-gap: 48px;
+                                
                             }
+                            @media screen and  (min-width: 768px) {
+                                .flex-filter-cards {
+                                    flex-direction: row;
+                                    column-gap: 24px;
+                                    
+            
+                            }
+                        }
                             
                             .filter-cards {
+                        
                                 padding-left: 16px;
                                 padding-top: 32px;
                                 padding-bottom: 32px;
@@ -892,18 +907,22 @@ color: rgba(255, 255, 255, 0.6);
                                 border-right: 1px solid var(--accent-subtitle);
                                 background-color: var(--white-text-color);
                             }
+                            
                             .cards {
-                                width: calc((100% - 2*24px) / 3);
-                                margin-right: 24px;
-                                margin-bottom: 48px;
+                                width: 100%;
                                 
                             }
-                            .cards:nth-child(3n) {
-                                margin-right: 0;
+                            @media screen and (min-width:768px){
+                                .cards {
+                                    width: calc((100% - 1 * 24px) / 2);
+                                }
                             }
-                            .cards:nth-last-child(-n+3) {
-                                margin-bottom: 0;}
-                                
+                            @media screen and (min-width:1200px){
+                                .cards {
+                                    width: calc((100% - 2 * 24px) / 3);
+                                }
+                            }
+                            
                                 .cards-link {
                                     position: relative;
                                     display: block;
@@ -919,33 +938,49 @@ color: rgba(255, 255, 255, 0.6);
                                     position: relative;
                                     overflow: hidden;
 }
-                                .cards-overlay {
-                                    position: absolute;
-                                    top: 300px;
-                                    right: 0;
-                                    color: var(--background-light);
-                                    font-size: 16px;
-                                    line-height: 1.5;
-                                    letter-spacing: 0.02em;
-                                    padding-top: 40px;
-                                    padding-right: 32px;
-                                    padding-left: 32px;
-                                    height: 300px;
-                                    background-color: var(--primary-brand-color);
-                                    opacity: 0.5;
-                                    transition: opacity var(--hover-animation), transform var(--hover-animation);
-                                    
-                                }
+.cards-overlay {
+    display: none;}
+
+@media screen and (min-width:1200px) {
+    .cards-overlay {
+        display: block;
+        position: absolute;
+        top: 300px;
+        right: 0;
+        color: var(--background-light);
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        padding-top: 40px;
+        padding-right: 32px;
+        padding-left: 32px;
+        height: 300px;
+        background-color: var(--primary-brand-color);
+        opacity: 0.5;
+        transition: opacity var(--hover-animation), transform var(--hover-animation);
+        
+    }
+}                                
+@media screen and (min-width:1200px){
+    .cards-link:hover .cards-overlay,
+    .cards-link:focus .cards-overlay {
+        opacity:1;
+        transform: translateY(-300px);
+    }
+}
                                 
-                                .cards-link:hover .cards-overlay,
-                                .cards-link:focus .cards-overlay {
-                                    opacity:1;
-                                    transform: translateY(-300px);
-                                }
+                               
                                 .cards-image { 
                                     display: block;
                                     max-width: 100%; 
                                     height: auto;}
+                                    .subtitle-portfolio{
+                                        font-weight: 500;
+                                        font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--accent-color)
+                                    }
                                     .text-card {
                                         margin-top: 8px;
                                     }
