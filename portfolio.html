@@ -22,19 +22,14 @@
     <header class="section-header header-border">
         <div class="container flex-header">
             <a class="logo" href="./">Web<span class="logo-dark">Studio</span></a>
-            <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-        <svg class="burger-menu" width="32" height="22">
-          <use href="./images/icomoon/sprite.svg#icon-hamburger"></use>
-        </svg>  
-       
+            <button class="menu-toggle js-open-menu burger" aria-controls="mobile-menu" aria-expanded="false">
+            <svg class="burger-icon" width="32" height="22">
+          <use href="./images/icomoon/sprite.svg#icon-burger"></use>
+            </svg>  
         </button>
             <nav>
                     <ul class="flex-menu">
-                        <li class="menu"><a class="nav" href="./index.html">Studio</a> </li>
+                        <li class="menu"><a class="nav " href="./index.html">Studio</a> </li>
                         <li class="menu"><a class="nav current" href="./portfolio.html">Portfolio</a> </li>
                         <li class="menu"><a class="nav" href>Contacts</a> </li>
                     </ul>
@@ -250,47 +245,54 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-          <svg
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
+          <svg class="menu-close" width="8px" height="8px">
+            <use href="./images/icomoon/sprite.svg#icon-close"></use>
           </svg>
         </button>
-  
         <ul class="mobile-menu">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
+            <li class="mobile-list"><a class="link" href="./index.html">Studio</a> </li>
+            <li class="mobile-list"><a class="link" href="./portfolio.html">Portfolio</a> </li>
+            <li class="mobile-list"><a class="link" href>Contacts</a> </li>
         </ul>
-      </div>
-
-    <section class="section-header header-border">
-        <div class="container flex-header">
-            <a class="logo" href="./">Web<span class="logo-dark">Studio</span></a>
-            <nav>
-                    <ul class="flex-menu">
-                        <li class="menu"><a class="nav" href="./index.html">Studio</a> </li>
-                        <li class="menu"><a class="nav current" href="./portfolio.html">Portfolio</a> </li>
-                        <li class="menu"><a class="nav" href>Contacts</a> </li>
-                    </ul>
-            </nav>
-            <address class="contacts">
-                <ul class="flex-contacts">
-                    <li class="menu contact-mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="contact-phone"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <div class="menu-bottom">
+            <address class="mobile-menu-contacts">
+                <ul>
+                    <li class="menu-phone"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li class="menu-mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 </ul>
             </address>
+            <ul class="menu-network">
+                <li class="menu-link">
+                    <a class="icon-link" href aria-label="Instagram" rel="noopener noreferer">
+                        <svg width="16" height="16">
+                          <use href="./images/icomoon/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="team-link">
+                    <a class="icon-link" href aria-label="Twitter" rel="noopener noreferer">
+                        <svg width="16" height="16">
+                          <use href="./images/icomoon/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="team-link">
+                    <a class="icon-link" href aria-label="Facebook" rel="noopener noreferer">
+                        <svg width="8" height="16">
+                          <use href="./images/icomoon/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="team-link">
+                    <a class="icon-link" href aria-label="LinkedIn" rel="noopener noreferer">
+                        <svg width="16" height="16">
+                          <use href="./images/icomoon/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </section>
+      </div>
     <!-- Scripts -->
     <script
       defer
