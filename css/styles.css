@@ -864,16 +864,16 @@ color: rgba(255, 255, 255, 0.6);
                                 display: flex;
                                 gap: 24px;
                                 justify-content: center;
-                                padding-bottom: 48px;
+                                margin-bottom: 48px;
                             }
                             @media screen and  (min-width: 768px) {
-                                .btn-filter {
-                                    padding-bottom: 64px;
+                                .flex-filter-btn {
+                                    margin-bottom: 64px;
             
                             }
                             @media screen and  (min-width: 1200px) {
-                                    .btn-filter {
-                                        padding-bottom: 72px;
+                                    .flex-filter-btn {
+                                        margin-bottom: 72px;
                 
                                     }
                             
@@ -1178,7 +1178,6 @@ color: #757575;
       |============================
     */
 
-   
     .menu-toggle {
         display: flex;
     align-items: center;
@@ -1205,10 +1204,10 @@ color: #757575;
     border: none;
     background-color: transparent;
     margin-right: 16px;
-margin-left: auto;
+    margin-left: auto;
   }
       
-      @media (min-width: 768px) {
+      @media screen and (min-width: 768px) {
         .menu-toggle {
           display: none;
         }
@@ -1309,5 +1308,6 @@ color:var(--ordinary-text-color);
     
 }
 .menu-bottom {
-    margin-bottom: 40px;
-}
+    margin-bottom: 40px;}
+
+    
