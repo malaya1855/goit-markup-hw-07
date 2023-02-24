@@ -9,13 +9,20 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
 <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="./css/styles.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" rel="stylesheet" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous">   
+<link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header section -->
     <header class="section-header">
         <div class="container flex-header">
             <a class="logo" href="./">Web<span class="logo-dark">Studio</span></a>
+            <button class="burger-menu js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
+        <svg class="burger-icon" width="32" height="22" fill="#2E2F42">
+          <use href="./images/icomoon/sprite.svg#icon-burger"></use>
+        </svg>  
+       
+        </button>
             <nav>
                     <ul class="flex-menu">
                         <li class="menu"><a class="nav current" href="./index.html">Studio</a> </li>
@@ -25,7 +32,7 @@
             </nav>
             <address class="contacts">
                 <ul class="flex-contacts">
-                    <li class="contact-mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="menu contact-mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li class="contact-phone"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
@@ -43,7 +50,7 @@
         <!-- Advanteges -->
         <section class="section">
             <div class="container">
-                <h2 class="title" visually hidden> Advanteges</h2>
+                <h2 class="title visually-hidden"> Advanteges</h2>
                 <ul class="flex-advantage">
                     <li class="list-adv">
                         <div class="advant-icon">
@@ -89,10 +96,11 @@
             <div class="container">
                 <h2 class="title">What are we doing</h2>
                 <ul class="flex-works">
-                    <li><img src="./images/websamples/rectangle71.jpg" alt="Monitor's screen" width="360" height="300"></li>
-                    <li><img src="./images/websamples/rectangle72.jpg" alt="Layers of mobile app screen" width="360" height="300"></li>
-                    <li><img src="./images/websamples/rectangle73.jpg" alt="Comparing of monitor's and mobile screens" width="360" height="300"></li>
-                </ul>
+                    <li><img src="./images/websamples/rectangle71@1x.jpg" alt="Monitor's screen" srcset="./images/websamples/rectangle71@1x.jpg 1x, ./images/websamples/rectangle71@2x.jpg 2x" width="360" height="300" loading="lazy">
+                        </li>
+                    <li><img src="./images/websamples/rectangle72@1x.jpg" alt="Layers of mobile app screen" srcset="./images/websamples/rectangle72@1x.jpg 1x, ./images/websamples/rectangle72@2x.jpg 2x" width="360" height="300" loading="lazy">
+                    </li><li><img src="./images/websamples/rectangle73@1x.jpg" alt="Comparing of monitor's and mobile screens" srcset="./images/websamples/rectangle73@1x.jpg 1x, ./images/websamples/rectangle73@2x.jpg 2x" width="360" height="300" loading="lazy">
+                </li></ul>
             </div>
         </section>
         <!-- Team -->
@@ -101,7 +109,7 @@
                 <h2 class="title">Our Team</h2>
                 <ul class="flex-team">
                     <li class="list-style">
-                        <img class="cards-image" src="./images/teamphoto/markguerrero.jpg" alt="Photo of the product designer" width="264" height="260">
+                        <img class="cards-team" src="./images/teamphoto/markguerrero@1x.jpg" alt="Photo of the product designer" srcset="./images/teamphoto/markguerrero@1x.jpg 1x, ./images/teamphoto/markguerrero@2x.jpg 2x" width="264" height="260" loading="lazy">
                             <div class="style-team">
                                 <h3 class="style-card">Mark Guerrero</h3>
                             <p class="body-text">Product Designer</p>
@@ -139,8 +147,7 @@
                         
                     </li>
                     <li class="list-style">
-                        <img class="cards-image" src="./images/teamphoto/tomford.jpg" alt="Photo of the frontend manager" width="264" height="260">
-                        
+                        <img class="cards-team" src="./images/teamphoto/tomford@1x.jpg" alt="Photo of the frontend manager" srcset="./images/teamphoto/tomford@1x.jpg 1x, ./images/teamphoto/tomford@2x.jpg 2x" width="264" height="260" loading="lazy">                        
                             <div class="style-team">
                                 <h3 class="style-card">Tom Ford</h3>
                                 <p class="body-text">Frontend Developer</p>
@@ -179,7 +186,7 @@
                         
                     </li>
                     <li class="list-style">
-                        <img class="cards-image" src="./images/teamphoto/camilagarcia.jpg" alt="Photo of the marketinf manager" width="264" height="260">
+                        <img class="cards-team" src="./images/teamphoto/camilagarcia@1x.jpg" alt="Photo of the marketing manager" srcset="./images/teamphoto/camilagarcia@1x.jpg 1x, ./images/teamphoto/camilagarcia@2x.jpg 2x" width="264" height="260" loading="lazy">                       
                             <div class="style-team">
                                 <h3 class="style-card">Camila Garcia</h3>
                                 <p class="body-text">Marketing</p>
@@ -218,8 +225,7 @@
                         
                     </li>
                     <li class="list-style">
-                        <img class="cards-image" src="./images/teamphoto/danielwilson.jpg" alt="Photo of the UI designer" width="264" height="260">
-                       
+                        <img class="cards-team" src="./images/teamphoto/danielwilson@1x.jpg" alt="Photo of the UI designer" srcset="./images/teamphoto/danielwilson@1x.jpg 1x, ./images/teamphoto/danielwilson@2x.jpg 2x" width="264" height="260" loading="lazy">                                             
                             <div class="style-team">
                                 <h3 class="style-card">Daniel Wilson</h3>
                                 <p class="body-text">UI Designer</p>
@@ -304,7 +310,7 @@
     <footer class="section-footer">
         <div class="container footer-flex">
             <div class="footer-base">
-                <a class="logo" href="./">Web<span class="logo-light">Studio</span></a>
+                <a class="logo logo-footer" href="./">Web<span class="logo-light">Studio</span></a>
                 <p class="footer-text">Increase the flow of customers and <br> sales for your business with digital <br> marketing & growth solutions.</p>
             </div>
         <div class="footer-social-network">
@@ -342,7 +348,7 @@
         </div>
         <div class="footer-subscribe">
             <p class="footer-subtitle">Subscribe</p>
-            <form class="subscribe-form" action>
+            <form class="subscribe-form">
                     <input class="subscribe-input" name="email" type="email" placeholder="E-mail">
                 <button class="subscribe-btn" type="submit">
                     <span class="footer-subtitle subtitle-btn">Subscribe</span>
@@ -364,7 +370,7 @@
     </button>
     <div class="modal-form-field">
         <b class="modal-name">Leave your contacts and we will call you back</b>
-        <form class="modal-form" action></form>
+        <form class="modal-form"></form>
         <ul class="modal-form-list">
             <li class="input-list">
                 <label class="modal-label" for="name">Name </label>
@@ -410,7 +416,63 @@
     </div>
     </div>
 </div>
+<!-- Menu container -->
 
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu-close" width="8px" height="8px">
+        <use href="./images/icomoon/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu">
+        <li class="mobile-list"><a class="link" href="./index.html">Studio</a> </li>
+        <li class="mobile-list"><a class="link" href="./portfolio.html">Portfolio</a> </li>
+        <li class="mobile-list"><a class="link" href>Contacts</a> </li>
+    </ul>
+    <div class="menu-bottom">
+        <address class="mobile-menu-contacts">
+            <ul>
+                <li class="menu-phone"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                <li class="menu-mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+        </address>
+        <ul class="menu-network">
+            <li class="menu-link">
+                <a class="icon-link" href aria-label="Instagram" rel="noopener noreferer">
+                    <svg width="16" height="16">
+                      <use href="./images/icomoon/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="team-link">
+                <a class="icon-link" href aria-label="Twitter" rel="noopener noreferer">
+                    <svg width="16" height="16">
+                      <use href="./images/icomoon/sprite.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="team-link">
+                <a class="icon-link" href aria-label="Facebook" rel="noopener noreferer">
+                    <svg width="8" height="16">
+                      <use href="./images/icomoon/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="team-link">
+                <a class="icon-link" href aria-label="LinkedIn" rel="noopener noreferer">
+                    <svg width="16" height="16">
+                      <use href="./images/icomoon/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+  </div>
+
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" defer integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js" defer></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
