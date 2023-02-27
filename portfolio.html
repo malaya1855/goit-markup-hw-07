@@ -60,7 +60,21 @@
             <li class="cards">
                 <a class="cards-link" href="">
                     <div class="cards-wrapper">
-                        <img class="cards-image" src="./images/portfolio/bankapp.jpg" alt="Variants of the screen for banking app" width="360" height="300">
+                        <img
+  class="cards-image"
+  srcset="
+  ./images/portfolio/img1t-356.jpg 356w,
+  ./images/portfolio/img1d-360.jpg 360w,
+  ./images/portfolio/img1m-396.jpg 396w,
+  ./images/portfolio/img1t-712.jpg 712w,
+  ./images/portfolio/img1d-720.jpg 720w,
+  ./images/portfolio/img1m-792.jpg 792w
+  "
+  sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+  src="./images/portfolio/img1m-396.jpg"
+  alt="Banking app interface"
+  loading="lazy"
+/>
                         <div class="cards-wrap-overlay">
                             <p class="cards-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
