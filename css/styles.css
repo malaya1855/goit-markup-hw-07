@@ -670,7 +670,6 @@ color: var(--accent-brand-color);}
                     .footer-flex{
                         flex-wrap: nowrap;
                         gap: 0;
-                        padding: 0 15px;
                 }
              }
              .logo-footer{
@@ -700,9 +699,11 @@ color: var(--accent-brand-color);}
                 @media screen and (min-width:1200px) {
                     .footer-social-network {
                         margin-left: 120px;
+                        margin-right: 80px;
                     }
                 }
                 .footer-subtitle{
+                    display: block;
                     font-weight: 500;
                     color: var(--white-text-color);
                     margin-bottom: 16px;
@@ -737,7 +738,14 @@ color: var(--accent-brand-color);}
                 .footer-subscribe{
                     width: 100%;
                     text-align: center;
+
                 }
+                @media screen and (min-width:1200px) {
+                    .footer-subscribe{
+                        width: 453px;    
+                    }
+                }
+                
                 @media screen and (min-width:768px) {
                     .footer-subscribe{
                         text-align: left;
@@ -745,13 +753,23 @@ color: var(--accent-brand-color);}
                 }}
                 @media screen and (min-width:1200px) {
                     .footer-subscribe{
-                        margin-left: 80px;
-                        margin-right: auto;
+                        /* margin-left: 80px; */
+                        /* margin-right: 0; */
+                        padding-right: auto;
                 }}
                 @media screen and (min-width:768px){
                     .subscribe-form {
                         display: flex;
                         align-items: center;
+                        margin-top: 16px;
+    
+                    }
+                }
+                @media screen and (min-width:1200px){
+                    .subscribe-form {
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
                         margin-top: 16px;
     
                     }
@@ -791,7 +809,7 @@ color: rgba(255, 255, 255, 0.6);
                     align-items: center;
                     gap: 16px;
                     margin-left: auto;
-                    margin-right: auto;;
+                    margin-right: auto;
                     padding: 8px 24px;
                     width: 165px;
                     height: 40px;
@@ -802,6 +820,12 @@ color: rgba(255, 255, 255, 0.6);
                 @media screen and (min-width:768px){
                     .subscribe-btn {
                         margin-left: 0;
+                    }
+                }
+                @media screen and (min-width:1200px) {
+                    .subscribe-btn {
+                        /* margin-left: 24px; */
+                        margin-right: 0;
                     }
                 }
             
