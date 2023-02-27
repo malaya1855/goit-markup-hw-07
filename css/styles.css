@@ -490,7 +490,10 @@ column-gap: 24px;
     .section-works {
     display: none;
 }}
-
+@media  screen and (min-width: 1200px){
+    .section-works {
+    padding-top: 0;
+}}
 @media screen and (min-width: 1200px){
 .flex-works {
                 display:flex;
