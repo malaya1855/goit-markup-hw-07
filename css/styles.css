@@ -1318,6 +1318,7 @@ letter-spacing: 0.02em;
 color:var(--ordinary-text-color);
 }
 .menu-network {
+    max-width: 328px;
     display: flex;
     justify-content: space-between;
     align-items: center;
